@@ -1,0 +1,687 @@
+/*!
+ * 
+ * Style Customizations for CPS Responsive Template
+ * Includes overrides for bootstrap.css and glyphicon.css and social.css.
+ * 
+ */
+ 
+ 
+ 
+/*
+ * GLOBAL CUSTOMIZAION 
+ *
+ */
+#ie7alertdiv {display:none;}
+
+body {/* padding-top:88px; */}
+
+h1,.h1,h2,.h2,h3,.h3 {  font-family: "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+h1,.h1 {color: #0033a0;}
+
+a { color: #0033a0;} 
+
+/* remove underline on some footer links, add light color */
+a:hover, a:focus {text-decoration:none; color:#008eaa ;}
+
+
+.grow {
+  display: inline-block;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.grow:hover, .grow:focus, .grow:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+
+
+/* BANNER /////////////////////////////////////////////////////////////////*/
+
+.bannerwrapper .btn-override { color: #fff; background-color: transparent; border-color: #ccc;}
+.bannerwrapper .btn:hover, .bannerwrapper .btn:focus {
+   background-color: rgba(255, 255, 255, 0.2);
+   background-color: #0033a0 \9;
+   border-color: #FFF;
+   color: #FFF;
+}
+
+.text-white {color:#fff;}
+.padmytop20 {padding-top: 20px;}
+.padmytop40 {padding-top: 40px;}
+.bannerwrapper {color: #fff; padding: 30px;}
+.bannerwrapper h1 { margin-top: 0;}
+.img-landing { padding: 4px; background-color: transparent;   border-radius: 16px;   border: 1px solid #fff;}
+
+
+
+
+
+
+.footerwrapper { background-color:#e6e6e6; color:#222; /*margin-top: 30px;*/ padding-top:30px; padding-bottom:30px; }
+
+/* overrides sharepoint authoring p tag - matches bootstrap default */
+.ms-WPBody { font-size: 14px;}
+
+
+/*adds space to the spotlight editable fields */
+.spotlightcontainer .ms-formfieldlabelcontainer,
+.pressreleasecontainer .ms-formfieldlabelcontainer{
+ margin-top: 24px;
+}
+
+
+/* cps color palette */
+
+.cps-teal   { color:#008eaa; }
+.cps-purple { color:#93328e; }
+.cps-green  { color:#78be20; }
+.cps-orange { color:#ffc72c; }
+.cps-blue   { color:#0033a0; }
+
+.cps-teal-bkg   { background-color:#008eaa; }
+.cps-purple-bkg { background-color:#93328e; }
+.cps-green-bkg  { background-color:#78be20; }
+.cps-orange-bkg { background-color:#ffc72c; }
+.cps-blue-bkg   { background-color:#0033a0; }
+
+
+
+
+
+
+/* GOOGLE SEARCH  ////////////////////////////////////////////////*/
+
+/* change the google search input box border color and radius */
+input.gsc-input {
+     font-size: 16px !important;
+     font-family: "century gothic", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+     border-color: #0033A0 !important; 
+     border-radius: 4px !important;  
+     -moz-border-radius: 4px !important;  
+     -webkit-border-radius: 4px !important;
+     height: 40px !important; }
+
+.gsc-input-box {
+     border-color: #0033A0 !important; 
+     border-radius: 4px !important;  
+      -moz-border-radius: 4px !important;  
+      -webkit-border-radius: 4px !important;
+      height: inherit !important;
+}
+/* remove padding inside of search input */
+.gsib_a {padding: 0;}
+
+ /* remove right padding of google search input box */
+.cse table.gsc-search-box td.gsc-input, table.gsc-search-box td.gsc-input { padding-right: 0px !important; }
+
+.cse input.gsc-input, input.gsc-input {/* padding : 6px 6px !important; */} 
+
+
+/* style search input button*/
+.cse .gsc-search-button input.gsc-search-button-v2, input.gsc-search-button-v2 {
+     width: 46px !important;
+     height: 46px !important;
+     padding: 14px !important;
+     min-width: 46px !important;
+     margin-top: 4px !important;
+}
+.cse input.gsc-search-button, input.gsc-search-button {
+     border: 0px solid #0033a0  !important;
+     border-radius: 5px  !important;
+     -moz-border-radius: 5px !important;
+     -webkit-border-radius: 5px !important;
+     border-color: #0033a0 !important;
+     background-color: #0033a0 !important;
+     background-image: none !important;
+}
+/* button hover */
+.cse input.gsc-search-button:hover, input.gsc-search-button:hover
+{ background-color: rgba(0, 51, 160, 0.6)  !important;}
+
+
+.googlesearchdiv {min-height:50px;}
+
+.googlesearchwrapper{ min-height:270px; padding: 60px 40px 80px 40px; }
+
+
+
+
+/* position the social icons in the header */
+.socialDiv {float:right; min-height:50px; padding-top: 10px; position: absolute; right: 20px; }
+.socialDiv>a{padding-left:10px;}
+
+ 
+
+/* page > xs */
+@media (min-width: 768px) 
+{
+ /*.navbar-collapse { padding-left: 180px !important; }   push nav to the right to give logo space */
+ /* body { padding-top:110px;}   drop the body down when the nav bar appears on non xs screens */
+}
+
+/* page = xs */
+@media (max-width: 767px) {
+ .socialDiv { display:none !important; }
+ .navbar-nav>li>a {padding: 10px 20px !important; }
+ .nav>li>a:hover, .nav>li>a:focus { border-bottom: none !important; }
+ .googlesearchwrapper{ padding: 60px 10px 80px 10px; }
+
+}
+
+
+
+
+
+/* NAVBAR  ////////////////////////////////////////////////*/
+
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: Transparent;
+  outline:#FFF dotted 0px;
+}
+
+
+/* navbar  background - white*/
+.navbar { min-height: 100px !important; /* opacity: 0.9 !important;*/ background-color: #FFF !important; border-bottom: #DDD 1px solid !important;  }
+
+/* navbar brand responsive */
+.navbar-brand {padding: 10px 40px 8px 15px; height:100px;}
+@media (max-width: 320px){.navbar-brand {padding-right: 1px;}}
+
+.navbar-brand-image {width: 144px; height:77px;}
+.navbar-toggle { margin-top: 22px; }
+.toggbutton {font-size: .7em; line-height:1em; display:block; font-weight:bold;}
+
+
+/* navbar menu styles - change the default size of the menu items*/
+.navbar-nav>li>a  
+{
+ -webkit-transition: border-bottom  ease-in-out .3s, padding-bottom ease-in-out .3s;
+ -moz-transition: border-bottom  ease-in-out .3s, padding-bottom ease-in-out .3s;
+ -o-transition: border-bottom  ease-in-out .3s, padding-bottom ease-in-out .3s;
+ transition: border-bottom  ease-in-out .3s, padding-bottom ease-in-out .3s;
+ 
+ padding: 45px 0px 16px 0px;  line-height: 15px; font-size:1.1em;  color: #0033a0; 
+                  font-family: "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+                  border-bottom: solid 0px #008eaa; padding-bottom:6px;
+                  }
+                  
+.navbar-nav>li   {padding-right: 25px }
+
+
+.nav > li > a.navParents:hover,.nav > li > a.navParents:focus, 
+.nav > li > a.navSchools:hover,.nav > li > a.navSchools:focus, 
+.nav > li > a.navAbout:hover,.nav > li > a.navAbout:focus, 
+.nav > li > a.navCalendar:hover,.nav > li > a.navCalendar:focus, 
+.nav > li > a.navStaff:hover,.nav > li > a.navStaff:focus, 
+.nav > li > a.navTopics:hover,.nav > li > a.navTopics:focus { border-bottom: solid 3px #008eaa ;  color: #008eaa;  padding-bottom:16px;}
+.nav > li > a.navSearch:hover,.nav > li > a.navSearch:focus { border-bottom: solid 3px #008eaa ;  color: #008eaa; padding-bottom:16px; }
+
+
+/* spotlight detail page - slightly larger type on xs layout */
+.lead {font-size: 18px; font-family: "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+/* adds space above and below the spotlight image  */
+.imgSpotlightImage {padding-top:20px; padding-bottom:20px;}
+
+/* removes space between spotlight head and subhead  */
+h2.spotlightsubhead {margin-top:0px;}
+
+/* removes space between press release head and sub  */
+hr.hrsmall {  margin-top: 0;  margin-bottom: 5px;  border-top: 1px solid #DDD; }
+
+/* adds space after press subhead  */
+.pressnotefield>div { font-size: 1.2em; margin-bottom:20px; font-style:italic;}
+
+
+
+
+
+
+
+
+
+/* CAROUSEL  ////////////////////////////////////////////////*/
+
+/* override of sharepoint item class */
+.item { margin: 0;  clear: none; } 
+
+/* carousel height */
+.carousel,
+.carousel-inner,
+.carousel-inner .item { height: 100%; }
+
+
+/* spotlight padding */
+.carousel-inner > .item {padding: 50px 10px;}
+
+/* spotlight image width */
+.carousel-inner>.item>div>div>div>img {
+display: block;
+width: 100% \9;
+max-width: 100%;
+height: auto;
+} 
+
+/* style the spotlight image border */
+.carousel-image {
+padding: 4px;
+border: 1px solid #FFF;
+border-radius: 16px;
+background-color:Transparent;
+}
+
+/* position the wrapping div for spotlight image 
+.carousel-image-div {width: 45%; float:right; right: 5%;}*/
+
+/* styles the caption */
+.carousel-caption 
+{
+ position:relative;
+  /*float: left;
+  width:40%;*/
+  right: 0;
+  top: 0px;
+  left: 5%;
+  z-index: 10;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: #fff;
+  text-align: left;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+.carousel,.carousel-inner,.carousel-inner .item { min-height: 250px; }
+.carousel-image-div{ float:right; width:90%; padding-right: 10px;}
+
+/* styles the spotlight text */
+.carousel-caption { text-shadow: 0 2px 2px rgba(13, 12, 67, 0.6)}
+.carousel-caption h2 { font-family: 'century gothic', Arial, Sans-Serif; margin-top:0;  }
+.carousel-caption p  { font-size: 16px; }
+
+@media (max-width: 767px) {
+.carousel-caption h2 { font-size: 24px; margin-top:10px; }
+.carousel-caption p  { font-size: 14px; }
+.carousel-image-div { /*display:none;*/ }
+.carousel-caption { left:0;  /*float:right;*/ }
+.carousel-inner>.item {padding: 20px 10px; }
+.carousel,.carousel-inner,.carousel-inner .item { min-height: 400px; }
+.carousel-image-div{ float:none; width:100%;}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {/* sm */
+ .carousel-inner>.item {padding: 20px 10px;}
+ .carousel-image-div{ padding-top:35px;}
+}
+
+@media (min-width: 992px) {/*md*/
+.carousel-inner>.item {padding: 30px 10px;}
+}
+
+@media (min-width: 1200px) {/*lg*/
+.carousel-inner>.item {padding: 30px 10px;}
+.carousel-inner>.item>div>div>div>img {max-width:391px;}
+}
+
+.carousel-control .icon-prev, .carousel-control .glyphicon-chevron-left { left: 0; margin-left: -20px;}
+.carousel-control .icon-next, .carousel-control .glyphicon-chevron-right { right: 0; margin-right: -20px;}
+
+/* make the button transparent */
+.carousel-caption .btn-default {
+color: #FCFCFC;
+background-color: Transparent;
+background-color: #0033a0 \9;
+border-color: #eee;
+}
+
+.carousel-caption .btn-default:hover,
+.carousel-caption .btn-default:focus,
+.carousel-caption .btn-default:active,
+.carousel-caption .btn-default.active {
+  /*color: #0033a0;
+  background-color: #e6e6e6;
+  border-color: #fff;*/
+  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #008eaa \9;
+  border-color: #FFF;
+  color: #FFF;
+}
+
+/* hide carousel indicators */
+.carousel-indicators {display:none;}
+
+/* remove shading from controls */
+.carousel-control.left {   background-image: none;  filter: none;}
+.carousel-control.right {  background-image: none;  filter: none;}
+
+.pageshadowright {
+  position: absolute;
+  z-index:1001;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 5%;
+  color: #fff;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .15) 100%);
+  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .15) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .15)));
+  background-image:         linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .15) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+background-repeat: repeat-x;
+  filter: alpha(opacity=50);
+  opacity: .5;
+
+}
+.pageshadowleft {
+  position: absolute;
+    z-index:1001;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 5%;
+  color: #fff;
+  background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0.15) 0,rgba(0, 0, 0, 0.0001) 100%);
+background-image: -o-linear-gradient(left,rgba(0,0,0,.15) 0,rgba(0,0,0,.0001) 100%);
+background-image: -webkit-gradient(linear,left top,right top,from(rgba(0, 0, 0, 0.15)),to(rgba(0, 0, 0, 0.0001)));
+background-image: linear-gradient(to right,rgba(0, 0, 0, 0.15) 0,rgba(0, 0, 0, 0.0001) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+background-repeat: repeat-x;
+  filter: alpha(opacity=50);
+  opacity: .5;
+
+}
+
+.carousel-control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  filter: alpha(opacity=0);
+  opacity: .5;
+}
+.carousel-control:hover,
+.carousel-control:focus {
+  color: #fff;
+  text-decoration: none;
+  filter: alpha(opacity=90);
+  outline: 0;
+  opacity: .9;
+}
+ 
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+ .carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+
+/* not used */
+.item:nth-child(1) {}
+.item:nth-child(2) {}
+.item:nth-child(3) {}
+.item:nth-child(4) {}
+
+
+/* used for spotlight carousel background */
+.carousel-gradient 
+{   background: -webkit-linear-gradient(-200deg, #0033a0, #008eaa ); 
+    background: -o-linear-gradient(-200deg, #0033a0, #008eaa ); 
+    background: -moz-linear-gradient(-200deg, #0033a0, #008eaa ); 
+    background: linear-gradient(-200deg, #0033a0, #008eaa );
+    background-color: #0033a0; }
+
+/* used in web part */
+.grad-orange {
+    background: -webkit-linear-gradient(-200deg, #93328e, #ffc72c); 
+    background: -o-linear-gradient(-200deg, #93328e, #ffc72c); 
+    background: -moz-linear-gradient(-200deg, #93328e, #ffc72c); 
+    background: linear-gradient(-200deg, #93328e, #ffc72c); 
+    background-color: #ffc72c; }
+
+/* used in web part */
+.grad-green {
+    background: -webkit-linear-gradient(-200deg, #008EAA, #78BE20); 
+    background: -o-linear-gradient(-200deg, #008EAA, #78BE20); 
+    background: -moz-linear-gradient(-200deg, #008EAA, #78BE20); 
+    background: linear-gradient(-200deg, #008EAA, #78BE20); 
+    background-color: #008EAA;}
+    
+/*  used in web part */
+.grad-blue {
+    background: -webkit-linear-gradient(-200deg, #0033a0, #008eaa ); 
+    background: -o-linear-gradient(-200deg, #0033a0, #008eaa ); 
+    background: -moz-linear-gradient(-200deg, #0033a0, #008eaa ); 
+    background: linear-gradient(-200deg, #0033a0, #008eaa );
+    background-color: #0033a0; }
+
+/*  used in web part */  
+.grad-violet {
+    background: -webkit-linear-gradient(-200deg, #601179, #93328E); 
+    background: -o-linear-gradient(-200deg, #601179, #93328E); 
+    background: -moz-linear-gradient(-200deg, #601179, #93328E); 
+    background: linear-gradient(-200deg, #601179, #93328E); 
+    background-color: #93328E;}
+
+/*  used in web part */    
+.grad-gray {
+    background: -webkit-linear-gradient(-200deg, #e6e6e6, #fefefe); 
+    background: -o-linear-gradient(-200deg, #e6e6e6, #fefefe); 
+    background: -moz-linear-gradient(-200deg, #e6e6e6, #fefefe); 
+    background: linear-gradient(-200deg, #e6e6e6, #fefefe); 
+    background-color: #e6e6e6;
+}
+
+
+/* TOPICS /////////////////////////////////////////////////////////////////*/
+
+
+/* space out the topics page and topic results page links for easier touch */
+.hlTopicLink, .hlAudienceLink, .hlGradeLink, .hlTopicResultsLink {font-size:1.2em; line-height:1.2em;}
+.hlTopicDiv, .hlAudienceDiv, .hlGradeDiv, .hlTopicResultsDiv {margin-top:10px;}
+
+.hlTopicTitle, .hlAudienceTitle, .hlGradeTitle {font-size:24px;}
+.hlAudienceTitleSpacer, .hlGradeTitleSpacer {padding-top:40px;}
+
+
+/* space out the topics results links for easier touch - overrides controls.css */
+.link-item, .link-item a, .link-item a:link{
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 1.2em;
+color: #0033a0;
+text-decoration:none;
+}
+.link-item a:visited, .link-item a:active{
+color: #0033a0;
+text-decoration:none;
+}
+.link-item a:hover{
+color: #008eaa;
+text-decoration:none;
+}
+div#linkitem{ margin-top: 10px;}
+
+/* space out the Press Releases on the News landing page */
+div#linkitempress{ margin-top: 20px; font-size: 1.2em;}
+
+
+/* space out the Related Topics div at the bottom of the page */
+.rpDisplayTopicLinksWrapper { padding:0; }
+.rpDisplayTopicLink {padding: 20px 0; display: inline-block;}
+
+.btnViewAllSpotlights {margin-bottom: 15px;}
+.btnViewAllTopics     {margin-bottom: 15px;}
+
+
+/* Sharepoint Responsive Layout 
+   remove 1px white space between rows on webzones
+ */ 
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 
+{
+min-height: 0px; 
+}
+
+/* style sharepoint menu to appear above other elements */
+  div.ms-MenuUIPopupBody {z-index: 9999;}
+  
+  input.ms-sbplain {font-size: 14px; padding: 5px 7px; line-height: 40px;  }
+
+
+
+
+
+
+
+
+
+/*
+ * SIDEBAR //////////////////////////////////////////////
+
+            for CPS_Layout_Responsive_LeftNav
+ */
+  .sidebar {
+   /* position: relative;
+    top: 101px;
+    bottom: 0;
+    left: 0;
+    z-index: 1;*/
+    display: block;
+    padding: 0 20px;
+    overflow-x: hidden;
+    overflow-y: hidden; /*NOT Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+
+
+
+
+
+/* override Sharepoint styles for Pagelayout with Left Menu */
+.level-bullet {
+border-style: none;
+border-color: inherit;
+border-width: 0;
+vertical-align: top;
+background-image:none !important;
+background-repeat: no-repeat; 
+background-position: left;
+padding-left: 0; 
+padding-right: 0;
+border-bottom: 1px solid #DDD;
+}
+.level-item, .level-item a, .level-item a:link {
+font-family: inherit;
+font-size: 1.07em;
+color: #428BCA;
+background-color: #F5F5F5;
+}
+.level-item-pos {
+margin: 0px;
+padding: 10px 10px;}
+
+.level-band {/* removes header */
+display: none;
+}
+
+
+
+
+
+
+
+/* Scroll to top link */
+#to-top {
+   display:none; 
+   text-decoration:none; 
+   position:fixed; 
+   bottom:10px; 
+   right:10px; 
+   overflow:hidden; 
+   width:50px; 
+   height:50px; 
+   border:none; 
+   text-indent:-999px; 
+   background:url('/ScriptLibrary/Responsive/images/ui.totop.png') no-repeat left top;
+}
+
+#to-top:hover {
+   background:url('/ScriptLibrary/Responsive/images/ui.totop.png') no-repeat left -51px; 
+   width:50px; 
+   height:50px; 
+   display:block; 
+   overflow:hidden; 
+   float:left
+}
+
+#to-top:active, #toTop:focus{ 
+outline:none; }
+
+/*
+
+
+/* CIRCLES ON HOME PAGE - Not Used*/
+
+.circleBase {
+    border-radius: 50%;
+    /* behavior: url(PIE.htc);  remove if you don't care about IE8 */
+    
+}
+.circleBase h2 
+{ line-height:120px; /* line-height vertically centers the h2 in the div. s/b same as w/h of circle-type1 */
+}
+
+.circle-type1 {
+    width: 28px;
+    height: 28px;
+    background: #ccc;
+}
+ 
